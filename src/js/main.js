@@ -1,12 +1,6 @@
 $(document).ready(function() {
-    // Handler for .load() called.
-//   });
-// $(function() {
 
-    console.log('ready');
-    // var storedHTMLBody = $('body').html();
-    // $('body').html('');
-
+    console.log('Keystone is ready');
     var token = getUrlParameter('welcome');
     var email = getUrlParameter('email');
     if(token && email){
