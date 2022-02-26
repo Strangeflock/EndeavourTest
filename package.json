@@ -1,0 +1,26 @@
+{
+  "name": "fabrizio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reset": "rimraf dist && rimraf .cache",
+    "start": "rimraf dist && parcel serve src/index.html",
+    "copy":  "cp static/fabrizio_animation.json dist/",
+    "build": "rimraf dist && parcel build src/index.html --public-url ./ && npm run copy"
+  },
+  "author": "Michal Lichwa",
+  "license": "",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "postcss-modules": "^3.2.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.11"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "smoothscroll-polyfill": "^0.4.4"
+  }
+}
